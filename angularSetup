@@ -1,0 +1,34 @@
+just follow the below steps:
+
+step1: check if you have installed NodeJs, if not please install (it is the base for most of the JS frameworks to run, manage.. etc)
+
+step2: clean cache using "npm cache clean" this command (it is important to avoid future issue while installing)
+
+step3: check your password contains any special characters (password: which is used to login or to authenticate the proxy n/w)
+        if any special characters convert those characters to url encoded format
+         example: 
+                  1.
+                    original password:myPass1! 
+                    converted password will be : myPass1%21
+                 2.
+                    original password:myPass1@ 
+                    converted password will be : myPass1%40
+       step3 is applicable for who's password has special characters.
+       
+stpe4: now we need to execute following commands
+      before executing these commands please get the proxy url of your n/w
+      npm config set proxy http://username.password@host.portnumber (this is to download http libraries)
+      npm config set https-proxy http://username.password@host.portnumber (this is to download http libraries)
+      example: 
+              npm config set proxy http://user1:myPass1%21@abc.com:80
+              npm config set proxy https://user1:myPass1%21@abc.com:80
+              
+              here
+              username                      : user1
+              password(after conversion)    : myPass1%21
+              host                          : abc.com
+              port number                   : 80
+       note: make sure no spaces between username, password, host and portnumber
+       
+ stpe5: now you can install any nodejs packages
+        example: npm install -g @angular/cli@latest
