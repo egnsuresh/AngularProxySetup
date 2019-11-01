@@ -1,7 +1,7 @@
 just follow the below steps:
 
 step1: check if you have installed NodeJs, if not please install (it is the base for most of the JS frameworks to run, manage.. etc)
-
+       https://nodejs.org/en/download/
 step2: clean cache using "npm cache clean" this command (it is important to avoid future issue while installing)
 
 step3: check your password contains any special characters (password: which is used to login or to authenticate the proxy n/w)
@@ -18,7 +18,7 @@ step3: check your password contains any special characters (password: which is u
 stpe4: now we need to execute following commands
       before executing these commands please get the proxy url of your n/w
       npm config set proxy http://username.password@host.portnumber (this is to download http libraries)
-      npm config set https-proxy http://username.password@host.portnumber (this is to download http libraries)
+      npm config set https-proxy http://username.password@host.portnumber (this is to download https libraries)
       example: 
               npm config set proxy http://user1:myPass1%21@abc.com:80
               npm config set proxy https://user1:myPass1%21@abc.com:80
