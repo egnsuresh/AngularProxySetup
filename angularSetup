@@ -14,6 +14,8 @@ step3: check your password contains any special characters (password: which is u
                     original password:myPass1@ 
                     converted password will be : myPass1%40
        step3 is applicable for who's password has special characters.
+       reference link get encoded values for special characters
+       https://www.w3schools.com/tags/ref_urlencode.asp
        
 stpe4: now we need to execute following commands
       before executing these commands please get the proxy url of your n/w
