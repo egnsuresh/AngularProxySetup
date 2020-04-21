@@ -19,11 +19,11 @@ step3: check your password contains any special characters (password: which is u
        
 stpe4: now we need to execute following commands
       before executing these commands please get the proxy url of your n/w
-      npm config set proxy http://username.password@host.portnumber (this is to download http libraries)
-      npm config set https-proxy http://username.password@host.portnumber (this is to download https libraries)
+      npm config set proxy http://username.password@host.portnumber (To download http libraries)
+      npm config set https-proxy http://username.password@host.portnumber (To download https libraries)
       example: 
               npm config set proxy http://user1:myPass1%21@abc.com:80
-              npm config set proxy https://user1:myPass1%21@abc.com:80
+              npm config set https-proxy http://user1:myPass1%21@abc.com:80
               
               here
               username                      : user1
